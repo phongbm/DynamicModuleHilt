@@ -2,9 +2,14 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navMain"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/oneFragment">
+
+    <include-dynamic
+        android:id="@+id/navFeatureOne"
+        app:graphResName="nav_feature_one"
+        app:moduleName="featureone" />
 
     <fragment
-        android:id="@+id/firstFragment"
+        android:id="@+id/oneFragment"
         android:name="com.phongbm.dynamicmodulehilt.OneFragment" />
 </navigation>

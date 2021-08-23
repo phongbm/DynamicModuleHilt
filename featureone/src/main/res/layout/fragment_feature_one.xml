@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".OneFragment">
+    tools:context=".FeatureOneFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="One-Fragment"
+        android:text="Feature-One-Fragment"
         android:textAppearance="?attr/textAppearanceHeadline6"
         tools:ignore="HardcodedText" />
 
@@ -20,14 +20,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="doSomething()"
-        android:textAllCaps="false"
-        tools:ignore="HardcodedText" />
-
-    <Button
-        android:id="@+id/btnOpenFeatureOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open Feature-One"
         android:textAllCaps="false"
         tools:ignore="HardcodedText" />
 </LinearLayout>
