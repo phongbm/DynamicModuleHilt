@@ -7,3 +7,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "DynamicModuleHilt"
 include ':app'
+include ':domain'
+include ':data'
