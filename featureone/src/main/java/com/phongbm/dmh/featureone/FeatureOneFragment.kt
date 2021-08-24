@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.phongbm.dmh.domain.SomethingRepository
 import com.phongbm.dmh.featureone.databinding.FragmentFeatureOneBinding
 import com.phongbm.dynamicmodulehilt.FeatureOneModuleDependencies
 import dagger.hilt.android.EntryPointAccessors
@@ -23,7 +22,7 @@ class FeatureOneFragment : Fragment() {
         get() = _binding!!
 
     @Inject
-    lateinit var somethingRepository: SomethingRepository
+    lateinit var viewModel: FeatureOneViewModel
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -44,7 +43,7 @@ class FeatureOneFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.btnDoSomething.setOnClickListener {
-            somethingRepository.doSomething()
+            viewModel.doSomething()
             Toast.makeText(requireContext(), "doSomething()", Toast.LENGTH_SHORT).show()
         }
     }
